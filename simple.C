@@ -2,7 +2,7 @@ void simple(){
 gROOT->Macro( "$ROOTCOREDIR/scripts/load_packages.C" );
 xAOD::Init();
 
-TFile *f = TFile::Open("AOD.01482225._000109.pool.root.1");
+TFile *f = TFile::Open("xAOD_mc.pool.root");
 t = xAOD::MakeTransientTree( f );
 TCanvas *c =new TCanvas("Electrons","Electrons",0,0,1024, 800);
 c->Divide(3,3);
